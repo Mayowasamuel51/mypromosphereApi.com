@@ -325,6 +325,7 @@ class UserController extends Controller
         if (auth('sanctum')->check()) {
             // try {
             $user_infomation =  User::findorFail($id);
+            $user_infomation =  User::findorFail($id);
             $user_infomation->id= Auth::id($id);
             // $user_infomation->countrys = 'sssssdsd';
             $user_infomation->location = $request->location;
